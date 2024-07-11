@@ -21,7 +21,7 @@ function moveCarouselProjet(direction) {
     currentIndexProjet += direction;
     if (currentIndexProjet < 0) {
         currentIndexProjet = totalCards - 1;
-    } else if (currentIndexProjet >= totalCards) {
+    } else if (currentIndexProjet >= totalCards - 1) {
         currentIndexProjet = 0;
     }
 
@@ -39,7 +39,7 @@ function moveCarouselAbout(direction) {
     currentIndexAbout += direction;
     if (currentIndexAbout < 0) {
         currentIndexAbout = totalCards - 1;
-    } else if (currentIndexAbout >= totalCards) {
+    } else if (currentIndexAbout >= totalCards - 2) {
         currentIndexAbout = 0;
     }
 

@@ -160,7 +160,7 @@ section {
     height: 150px;
     font-size: 18px;
     border-radius: 8px;
-    box-shadow: white 0px 0px 10px;
+    box-shadow: white 0px 0px 8px;
 }
 
 .container-carrousel {
@@ -210,7 +210,7 @@ section {
     background-color: white;
     margin: 10px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: white 0px 0px 5px;
 }
 
 .carousel-card-about img {
@@ -248,7 +248,7 @@ section {
 }
 
 #project {
-    background-color: #000000;
+    background-color: #171717;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -263,6 +263,7 @@ section {
     width: 80%;
     margin: auto;
     overflow: hidden;
+    border-radius: 23px;
 }
 
 .carousel-container {
@@ -276,13 +277,19 @@ section {
 }
 
 .carousel-card {
+    position: relative;
     min-width: 40%;
     box-sizing: border-box;
     padding: 20px;
+    height: 250px;
     background-color: #f4f4f4;
     margin: 10px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: white 0px 0px 8px;
+}
+
+.carousel-card h2 {
+    margin-bottom: 20px;
 }
 
 .carousel-button {
@@ -299,12 +306,57 @@ section {
 
 .carousel-button.prev {
     left: 10px;
+    border-radius: 100px;
+    background-color: black;
+    box-shadow: #575757 0px 0px 10px;
 }
 
 .carousel-button.next {
     right: 10px;
+    border-radius: 100px;
+    background-color: black;
+    box-shadow: #575757 0px 0px 10px;
+}
+
+.carousel-link {
+    display: inline-block;
+    background-color: black; /* Bootstrap primary color for example */
+    box-shadow: #575757 0px 0px 10px;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.carousel-link:hover {
+    background-color: #575757;
+    box-shadow: black 0px 0px 10px;
 }
 
 #stage {
     background-color: #171717;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.container-stage{
+    position: relative;
+    background-color: white;
+    width: 60%;
+    border-radius: 8px;
+    box-shadow: white 0px 0px 8px;
+}
+
+.container-stage h2 {
+    padding: 20px;
+    border-bottom: 1px solid #f4f4f4;
 }

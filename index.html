@@ -42,8 +42,10 @@
     <section id="about">
         <div class="aboutText">
             <p>Je m'appelle Lucas Da Silveira et je suis étudiant en informatique à l'IUT Nord Franche-Comté.
-                Passionné par les technologies et l'innovation, je me spécialise dans le développement de web full stack.
-                Mes études et mes projets personnels m'ont permis de développer mes compétences en programmation, en résolution de problèmes complexes et en collaboration au sein d'équipe.</p>
+                Passionné par les technologies et l'innovation, je me spécialise dans le développement de web full
+                stack.
+                Mes études et mes projets personnels m'ont permis de développer mes compétences en programmation, en
+                résolution de problèmes complexes et en collaboration au sein d'équipe.</p>
         </div>
         <div class="container-carrousel">
             <div class="title-about">Mes Compétences</div>
@@ -107,24 +109,41 @@
     </section>
 
     <section id="project">
-        <h1>Projets</h1>
         <div class="carousel">
             <button class="carousel-button prev" onclick="moveCarouselProjet(-1)">&#10094;</button>
             <div class="carousel-container">
                 <div class="carousel-track">
                     <div class="carousel-card">
-                        <h2>Projet 1</h2>
-                        <p>Description du projet 1...</p>
+                        <h2>Mastermind</h2>
+                        <p>Développement du jeu Mastermind en Java et la bibliothèque JavaFx.
+                            Ce projet est issu d'un projet universitaire et a été développé par 5 étudiants</p>
+                        <a href="https://github.com/Lucas-Da-Silveira/SAE-1-2-6-Mastermind" class="carousel-link">GitHub</a>
                     </div>
                     <div class="carousel-card">
-                        <h2>Projet 2</h2>
-                        <p>Description du projet 2...</p>
+                        <h2>Heroes and Villains</h2>
+                        <p>Ce projet universitaire nous demandait de créer une application web conçue en VueJs avec
+                            Vuetify dont le but est de gérer des super-héros.
+                            Elle permet de consulter les différents super-héros, de les ajouter à une équipe et
+                            d'associer ces équipes à des organisations.
+                            Les données des super-héros sont récupérées via une API fournie par un professeur</p>
+                        <a href="https://github.com/Lucas-Da-Silveira/MetroBoomin" class="carousel-link">GitHub</a>
                     </div>
                     <div class="carousel-card">
-                        <h2>Projet 3</h2>
-                        <p>Description du projet 3...</p>
+                        <h2>Explorateur de fichier</h2>
+                        <p>Création d'un explorateur de fichier en Qt
+                            Ce projet est issu d'un projet universitaire et a été développé par 2 étudiants</p>
+                        <a href="https://github.com/mathysn/qt-file-explorer" class="carousel-link">GitHub</a>
                     </div>
-                    <!-- Ajoutez autant de cartes que nécessaire -->
+                    <div class="carousel-card">
+                        <h2>EzCon</h2>
+                        <p>Ce projet universitaire nous demandait de réaliser une application web full-stack pour une
+                            manifestation.
+                            Le frontend devait être développé en VueJs et le backend en JavaScript devait être sous la
+                            forme d'une API REST.
+                            Postgresql a été utilisé pour la base de donnée. Ce projet a été développé par 5
+                            étudiants</p>
+                        <a href="https://github.com/SunoWhere/Chokbar-Project" class="carousel-link">GitHub</a>
+                    </div>
                 </div>
             </div>
             <button class="carousel-button next" onclick="moveCarouselProjet(1)">&#10095;</button>
@@ -132,13 +151,20 @@
     </section>
 
     <section id="stage">
-        <h1>Section 3</h1>
-        <p>Content for section 3...</p>
+        <div class="container-stage">
+            <h1>Développement Backend chez Hopteo</h1>
+            <p>Lors de ma 2ème année de BUT Informatique, j'ai pu effectuer un stage de 8 semaines chez Hopteo.
+            J'ai rejoint l'équipe afin de réaliser des algorithmes permettant de récupérer et nettoyer des données grâce à différentes méthodes.
+            Afin que 30 000 formations post bac soit ajoutées à l'application, permettant à la startup de toucher un autre public.
+            J'ai travaillé en autonomie sur le projet, j'ai pu développer mes compétences en JavaScript et mongoDb, mais aussi d'apprendre à installer et utiliser Mistral.
+            Cette expérience m'a permis de découvrir le monde du travail et le monde de la startup</p>
+            <a href="hopteo.html" class="stage-link">Voir plus</a>
+        </div>
     </section>
 
 </main>
 <footer id="contact">
-    <p>Copyright &copy; 2024 Lucas-Da-Silveira</p>
+    <p>Copyright &copy; 2024 Lucas Da Silveira</p>
 </footer>
 </body>
 </html>
