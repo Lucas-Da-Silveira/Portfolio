@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/nav.css">
+    <script src="./src/js/index.js"></script>
     <title>Portfolio</title>
 </head>
 <body>
@@ -40,13 +41,95 @@
 <main>
 
     <section id="about">
-        <h1>Section 1</h1>
-        <p>Content for section 1...</p>
+        <div class="aboutText">
+            <p>Je m'appelle Lucas Da Silveira et je suis étudiant en informatique à l'IUT Nord Franche-Comté.
+                Passionné par les technologies et l'innovation, je me spécialise dans le développement de web full stack.
+                Mes études et mes projets personnels m'ont permis de développer mes compétences en programmation, en résolution de problèmes complexes et en collaboration au sein d'équipe.</p>
+        </div>
+        <div class="container-carrousel">
+            <div class="title-about">Mes Compétences</div>
+            <div class="carousel-about">
+                <button class="carousel-button-about prev" onclick="moveCarouselAbout(-1)">&#10094;</button>
+                <div class="carousel-container-about">
+                    <div class="carousel-track-about">
+                        <div class="carousel-card-about">
+                            <img src="./src/img/javascript.svg">
+                        </div>
+                        <div class="carousel-card-about">
+                            <img src="./src/img/html5.svg">
+                        </div>
+                        <div class="carousel-card-about">
+                            <img src="./src/img/css3.svg">
+                        </div>
+                        <div class="carousel-card-about">
+                            <img src="./src/img/nodejs.svg">
+                        </div>
+                        <div class="carousel-card-about">
+                            <img src="./src/img/vuejs.svg">
+                        </div>
+                        <div class="carousel-card-about">
+                            <img src="./src/img/flask.svg">
+                        </div>
+                        <div class="carousel-card-about">
+                            <img src="./src/img/c.svg">
+                        </div>
+                        <div class="carousel-card-about">
+                            <img src="./src/img/java.svg">
+                        </div>
+                        <div class="carousel-card-about">
+                            <img src="./src/img/python.svg">
+                        </div>
+                        <div class="carousel-card-about">
+                            <img src="./src/img/bash.svg">
+                        </div>
+                        <div class="carousel-card-about">
+                            <img src="./src/img/mongodb.svg">
+                        </div>
+                        <div class="carousel-card-about">
+                            <img src="./src/img/mysql.svg">
+                        </div>
+                        <div class="carousel-card-about">
+                            <img src="./src/img/postgresql.svg">
+                        </div>
+                        <div class="carousel-card-about">
+                            <img src="./src/img/git.svg">
+                        </div>
+                        <div class="carousel-card-about">
+                            <img src="./src/img/linux.svg">
+                        </div>
+                        <div class="carousel-card-about">
+                            <img src="./src/img/intellij.svg">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-button-about next" onclick="moveCarouselAbout(1)">&#10095;</button>
+            </div>
+        </div>
     </section>
 
     <section id="project">
-        <h1>Section 2</h1>
-        <p>Content for section 2...</p>
+        <h1>Projets</h1>
+        <div class="carousel">
+            <button class="carousel-button prev" onclick="moveCarouselProjet(-1)">&#10094;</button>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="carousel-card">
+                        <h2>Projet 1</h2>
+                        <p>Description du projet 1...</p>
+                    </div>
+                    <div class="carousel-card">
+                        <h2>Projet 2</h2>
+                        <p>Description du projet 2...</p>
+                    </div>
+                    <div class="carousel-card">
+                        <h2>Projet 3</h2>
+                        <p>Description du projet 3...</p>
+                    </div>
+                    <!-- Ajoutez autant de cartes que nécessaire -->
+                </div>
+            </div>
+            <button class="carousel-button next" onclick="moveCarouselProjet(1)">&#10095;</button>
+        </div>
     </section>
 
     <section id="stage">
@@ -54,16 +137,9 @@
         <p>Content for section 3...</p>
     </section>
 
-    <section id="contact">
-        <h1>Section 4</h1>
-        <p>Content for section 4...</p>
-    </section>
-    
 </main>
-<footer>
+<footer id="contact">
     <p>Copyright &copy; 2024 Lucas-Da-Silveira</p>
 </footer>
-<button id="backToTop" onclick="scrollToTop()">Retour en haut</button>
-
 </body>
 </html>

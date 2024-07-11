@@ -10,3 +10,39 @@ window.onscroll = function () {
 function scrollToTop() {
     window.scrollTo({top: 0, behavior: 'smooth'});
 }
+
+let currentIndexProjet = 0;
+
+function moveCarouselProjet(direction) {
+    const carouselTrack = document.querySelector('.carousel-track');
+    const totalCards = document.querySelectorAll('.carousel-card').length;
+    const cardWidth = document.querySelector('.carousel-card').clientWidth;
+
+    currentIndexProjet += direction;
+    if (currentIndexProjet < 0) {
+        currentIndexProjet = totalCards - 1;
+    } else if (currentIndexProjet >= totalCards) {
+        currentIndexProjet = 0;
+    }
+
+    const newTransform = -currentIndexProjet * cardWidth;
+    carouselTrack.style.transform = `translateX(${newTransform}px)`;
+}
+
+let currentIndexAbout = 0;
+
+function moveCarouselAbout(direction) {
+    const carouselTrack = document.querySelector('.carousel-track-about');
+    const totalCards = document.querySelectorAll('.carousel-card-about').length;
+    const cardWidth = document.querySelector('.carousel-card-about').clientWidth;
+
+    currentIndexAbout += direction;
+    if (currentIndexAbout < 0) {
+        currentIndexAbout = totalCards - 1;
+    } else if (currentIndexAbout >= totalCards) {
+        currentIndexAbout = 0;
+    }
+
+    const newTransform = -currentIndexAbout * cardWidth;
+    carouselTrack.style.transform = `translateX(${newTransform}px)`;
+}
