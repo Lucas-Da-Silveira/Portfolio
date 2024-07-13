@@ -46,3 +46,10 @@ function moveCarouselAbout(direction) {
     const newTransform = -currentIndexAbout * cardWidth;
     carouselTrack.style.transform = `translateX(${newTransform}px)`;
 }
+
+function startAutoRotate() {
+    setInterval(() => {
+        moveCarouselAbout(1);
+    }, 2000);
+}
+window.addEventListener('load', startAutoRotate);

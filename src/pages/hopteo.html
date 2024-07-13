@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/hopteo.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <script src="../js/index.js"></script>
+    <title>Hopteo</title>
+</head>
+<body>
+<nav class="navbar">
+    <ul>
+        <li><a href="../../index.html#about">A propos</a></li>
+        <li><a href="../../index.html#project">Projets</a></li>
+        <li><a href="../../index.html#stage">Stage</a></li>
+        <li><a href="../../index.html#contact">Contact</a></li>
+    </ul>
+</nav>
+<main>
+    <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <div class="main-container">
+        <div class="title-container">
+            <div class="title-page">
+                <h1>Stage chez Hopteo</h1>
+                <p>20 Chemin de la Teulière, 81000 Albi</p>
+            </div>
+            <div class="logo-hopteo">
+                <img src="../img/hopteo.png" alt="Logo Hopteo">
+            </div>
+        </div>
+        <div class="intro">
+            <h1>Introduction</h1>
+            <p>Lors de ma 2ème année de BUT Informatique, j'ai pu effectuer un stage de 8 semaines chez Hopteo.
+                J'ai rejoint l'équipe pour réaliser des algorithmes permettant de récupérer et nettoyer des données
+                grâce à différentes méthodes.
+                Afin que 30 000 formations post bac soit ajoutées à l'application, permettant à la startup de toucher un
+                autre public.
+                J'ai travaillé en autonomie sur le projet, j'ai pu développer mes compétences en JavaScript et mongoDb,
+                mais aussi d'apprendre à installer et utiliser Mistral.
+                Cette expérience m'a permis de découvrir le monde du travail et le monde de la startup.</p>
+        </div>
+        <div class="presentation-hopteo">
+            <h1>Présentation</h1>
+            <p>Hopteo est une startup créée par 3 étudiants de l'IMT Mines Albi.
+                Cette application permet aux étudiants en classe préparatoire aux grandes écoles (CPGE)
+                de trouver l'école qui leur corresponde par un classement personnalisé en fonctions des cartes
+                swipper.</p>
+        </div>
+        <div class="techno">
+            <h1>Technologies utilisées</h1>
+            <p>Pour réaliser ma mission, j'ai principalement utilisé Javascript associé à nodeJs et des packages NPM
+                tels que puppeteer qui me permettaient de scraper des fichiers et des données sur l'Onisep afin de
+                compléter la base de donnée pour les 30 000 formations.
+                De plus Mistral-7b a été utilisé pour nettoyer efficacement les données et permettre de traiter tous les
+                cas.
+                Pour la base de donnée, j'ai utilisé mongoDb, car c'était la technologie déjà en place.</p>
+        </div>
+        <div class="etatArt">
+            <div class="etatArt-text">
+                <h1>État de l'art</h1>
+                <p>Avant de commencer à développer, il fallait que je fasse un état de l'art des bases de données
+                    existantes lié aux formations post bac.
+                    En répertoriant les clés présentes dans chaque fichier, API... Afin de pouvoir noter chaque source
+                    et trouver le fichier qui va nous servir de fondation</p>
+            </div>
+            <div class="etatArt-image">
+                <img src="../img/etatArt.png" alt="Etat de l'art">
+            </div>
+        </div>
+        <div class="Processus">
+            <div class="Processus-Text">
+                <h1>Processus</h1>
+                <p>L'étape juste avant de commencer à développer a été de faire les diagrammes UML des processus.
+                    Le premier processus permet de mettre en idée la récupération des données en fonction des sources et
+                    savoir s'il faut les transformer en Json.
+                    Pour celà les informations (enpoint, nom, méthode de récupération) sur chaque fichier sont stockés
+                    dans une liste nous permettant d'automatiser le processus.</p>
+            </div>
+            <div class="Processus-image">
+                <img src="../img/Processus1.png" alt="Processus">
+            </div>
+            <div class="Processus-Text">
+                <p>Le processus 2 permet de fusionner les fichiers ensemble afin d'avoir des données complète sur les
+                    formations.
+                    Pour se faire chaques clés et fichiers était stocké dans une matrice de priorité dont le but était
+                    de noter parmis les fichiers dans lequel il fallait aller chercher la clé.
+                    De 1 le fichier prioritaire à X le dernier fichier dans lequelle aller chercher la clé si elle n'est
+                    pas présente dans les fichiers précédents.</p>
+            </div>
+            <div class="Processus-image">
+                <img src="../img/Processus2.png" alt="Processus">
+            </div>
+        </div>
+        <div class="data">
+            <h1>Données</h1>
+            <p>Les données ont été récupérer de différentes manières. La plus simple grâce aux API de l'Enseignement
+                Sup
+                et l'Onisep.
+                Mais aussi d'une manière moins automatisée pour les fichiers de DataGouv je récupérais l'url du
+                fichier
+                et je demandais à l'utilisateur de télécharger le/les fichier(s).
+                Enfin pour compléter les données, j'ai développé des fonctions permettant de scrapper le html des
+                pages
+                Onisep, nous permettant d'avoir les informations manquantes.</p>
+        </div>
+        <div class="picture-grid">
+            <div class="picture-container">
+                <img src="../img/dataGouvSheet.png" alt="DataGouv Sheet">
+                <p>Exemple donnée dataGouv</p>
+            </div>
+            <div class="picture-container">
+                <img src="../img/OnisepAPI.png" alt="Onisep">
+                <p>Exemple API Onisep</p>
+            </div>
+            <div class="picture-container">
+                <img src="../img/ScrapOnisep.png" alt="Onisep Scrap">
+                <p>Exemple donnée Onisep Scrap</p>
+            </div>
+            <div class="picture-container">
+                <img src="../img/EnseignementSupAPI.png" alt="Enseignement Sup">
+                <p>Exemple API Enseignement Sup</p>
+            </div>
+        </div>
+        <div class="algo-data">
+            <div class="algo-data-image">
+                <img src="../img/Algo%20Data.png" alt="Algo Data">
+            </div>
+            <div class="algo-data-text">
+                <p>Cette fonction me permet de récupérer les data de l'Onisep grâce à son API afin d'être stockés
+                    dans un tableau.
+                    Dans une autre fonction, je récupère les données du tableau et je les écrits dans un fichier au
+                    format JSON.</p>
+            </div>
+        </div>
+        <div class="dataClean">
+            <div class="dataClean-text">
+                <h1>Nettoyage des données</h1>
+                <p>Après avoir récupéré les données, il fallait les nettoyer pour qu'elles soient utilisables.
+                    Pour celà, nous avons opté pour du regex mais c'était très peu efficace au vu du nombre de données
+                    et de cas que l'on avait.
+                    Voici un exemple de fonction utilisant du regex. </p>
+            </div>
+            <div class="dataClean-image">
+                <img src="../img/regex.png" alt="Regex">
+            </div>
+        </div>
+        <div class="dataClean-text">
+            <p>J'ai donc proposé d'utiliser l'intélligence artificiel.
+                Sauf que chatGPT reviendrait trop chère au vu des données à passer,
+                alors nous nous sommes tourné vers Mistral et son modèle Mistral-7b qui est efficace et qui ne nécessite
+                pas une grosse machine.
+                Grâce à Ollama,nous pouvons faire tourner notre modèle en local et l'utiliser dans nos fonctions
+                JavaScript grâce au package NPM Ollama.
+            </p>
+        </div>
+        <div class="dataClean-Image">
+            <img src="../img/OllamaServe.png" alt="Ollama">
+            <img src="../img/requeteMistral.png" alt="Mistral">
+        </div>
+        <div class="gestionProjet">
+            <div class="gestionProjetText">
+                <h1>Gestion de projet</h1>
+                <p>Le projet a été géré en méthode agile.
+                    Notion était utilisé pour référencer les tâches à faire durant les sprints de 2 semaines.
+                    Chaque matin une réunion de 5 minutes avec mon tuteur avait lieu pour savoir ce qu'on avait fait la
+                    veille et ce qu'on allait faire le jour même.
+                    De plus une réunion de 30 min avec toute l'équipe avait lieu tous les mercredi matin afin de savoir
+                    qui faisait quoi dans l'équipe.
+                    En fin de chaque sprint une réunion de 1h-2h avait lieu avec mon tuteur pour faire un point sur le
+                    sprint en cours et planifier les nouvelles tâches pour le nouveau sprint.</p>
+            </div>
+            <div class="gestionProjetImage">
+                <img src="../img/Notion.png" alt="Notion">
+            </div>
+        </div>
+        <div class="competence">
+            <h1>Compétences</h1>
+            <p>Ce stage m'a permis de développer mes compétences en développement web, particulièrement au niveau du
+                backend mais aussi dans la construction d'algorithme complexe. J'ai appris à travailler en autonomie et
+                en équipe, mais aussi à gérer mon temps pour ne pas être en retard sur les sprints.</p>
+
+            <h2>Compétences développées :</h2>
+            <ul>
+                <li>
+                    <strong>Élaborer et implémenter les spécifications fonctionnelles et non fonctionnelles à partir des
+                        exigences :</strong> J'ai su suivre le cahier des charges qui m'a été fourni tout en proposant
+                    mes idées et en me basant sur de l'existant.
+                </li>
+                <li>
+                    <strong>Utiliser des techniques algorithmiques adaptées pour des problèmes complexes :</strong> J'ai
+                    dû adapter mes algorithmes en fonction des situations, optimiser mon code afin qu'il ne soit pas
+                    trop lourd et long pour la machine, utiliser l'intelligence artificielle pour le nettoyage des
+                    données, et utiliser des algorithmes de recherche séquentielle, etc.
+                </li>
+                <li>
+                    <strong>Capturer et stocker des ensembles volumineux et complexes de données hétérogènes :</strong>
+                    Soit en utilisant des API ou par scrapping, j'ai su récupérer des ensembles volumineux de données et
+                    les stocker dans des fichiers JSON avant traitement.
+                </li>
+                <li>
+                    <strong>Appliquer des méthodes d’exploration et d’exploitation des données :</strong> Par scrapping,
+                    j'ai su développer un algorithme permettant de rechercher certaines div HTML dans les pages
+                    indiquées, afin de récupérer des données manquantes.
+                </li>
+                <li>
+                    <strong>Formaliser les besoins du client et de l’utilisateur :</strong> Tout au long de mon stage,
+                    j'ai su communiquer avec mon tuteur afin de décrire mes idées et mes avancées, mais aussi de
+                    comprendre les besoins de l'entreprise.
+                </li>
+                <li>
+                    <strong>Rendre compte de son activité professionnelle :</strong> Tout au long de mon stage, j'ai su
+                    expliquer mes missions lors des différentes réunions d'équipes, mais aussi m'intéresser aux missions
+                    des autres membres de l'équipe.
+                </li>
+            </ul>
+        </div>
+    </div>
+</main>
+<footer id="contact">
+    <div class="container-contact">
+        <a href="https://www.linkedin.com/in/lucas-dslvra-6b3b892b3/"><img src="../img/linkedin.svg" alt="LinkedIn"></a>
+        <a href="https://github.com/Lucas-Da-Silveira"><img src="../img/github.svg" alt="GitHub"></a>
+        <a href="https://www.instagram.com/lucas_dslvra/"><img src="../img/instagram.svg" alt="Instagram"></a>
+    </div>
+    <p>Copyright &copy; 2024 Lucas Da Silveira</p>
+</footer>
+</body>
+</html>
